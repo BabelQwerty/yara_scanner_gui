@@ -1,9 +1,13 @@
-# LOKI2
-LOKI - Simple IOC and YARA Scanner
+# LOKI2-gui
+LOKI - Simple IOC and YARA Scanner ( gui version )
 
 ## Status
-
+__*Do not use in ur project , this project is for learning*__  
+__*Do not use in ur project , this project is for learning*__  
+__*Do not use in ur project , this project is for learning*__  
+__*Do not use in ur project , this project is for learning*__  
 Work in Progress. This version is not ready for use. There's still some work to do for a first release. 
+
 
 ### What's already implemented
 
@@ -32,51 +36,29 @@ Work in Progress. This version is not ready for use. There's still some work to 
 
 ## Requirements
 
-See the files in the folder .github/workflows for steps to setup a build environment for 
+I only test for windows 10 / windows 11
 
-- Linux
-- macOS
+- Windows
 
 ## Providing Signatures 
 
-```bash
-git clone https://github.com/Neo23x0/signature-base ../signature-base/
-ln -s ../signature-base/ ./signatures
-```
+only work for `yara 3.11`
 
 ## Build
 
 ```bash
-cargo build
+cargo build --release 
 ```
 
-## Test Run
-
-```bash
-cargo build && ./target/debug/loki --help
-```
 
 ## Usage
 
 ```
-Usage: loki [OPTIONS]
-
-LOKI YARA and IOC Scanner
-
-Options:
-  -m, --max-file-size         Maximum file size to scan (default: 10000000)
-  -s, --show-access-errors    Show all file and process access errors
-  -c, --scan-all-files        Scan all files regardless of their file type / extension
-  -d, --debug                 Show debugging information
-  -t, --trace                 Show very verbose trace output
-  -n, --noprocs               Don't scan processes
-  -o, --nofs                  Don't scan the file system
-  -f, --folder                Folder to scan
-  -h, --help                  Show this help message.
+./loki-gui.exe
 ```
 
 # Screenshots
 
-LOKI 2 alpha version
+LOKI 2 (gui) alpha version
 
-![Screenhot of Alpha Version](/screens/screen-alpha.png)
+![Screenhot of (gui) Alpha Version](./screens/gui_screen.png)
