@@ -1,5 +1,7 @@
 # LOKI2-gui
-LOKI - Simple IOC and YARA Scanner ( gui version )
+LOKI - Simple IOC and YARA Scanner ( gui version )   
+Fork from [loki2](https://github.com/Neo23x0/Loki2)  
+
 
 ## Status
 __*Do not use in ur project , this project is for learning*__  
